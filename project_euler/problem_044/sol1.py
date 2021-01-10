@@ -33,6 +33,7 @@ def solution(limit: int = 5000) -> int:
     >>> solution(5000)
     5482660
     """
+    #this is a simple change
     pentagonal_nums = [(i * (3 * i - 1)) // 2 for i in range(1, limit)]
     for i, pentagonal_i in enumerate(pentagonal_nums):
         for j in range(i, len(pentagonal_nums)):
